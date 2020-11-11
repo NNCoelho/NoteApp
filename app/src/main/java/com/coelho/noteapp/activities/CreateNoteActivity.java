@@ -1,10 +1,12 @@
-package com.coelho.noteapp;
+package com.coelho.noteapp.activities;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.coelho.noteapp.R;
 
 public class CreateNoteActivity extends AppCompatActivity {
 
