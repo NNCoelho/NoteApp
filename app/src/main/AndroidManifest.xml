@@ -12,11 +12,11 @@
         android:theme="@style/Theme.NoteApp">
         <activity
             android:name=".activities.CreateNoteActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="unspecified"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".activities.MainActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="unspecified"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

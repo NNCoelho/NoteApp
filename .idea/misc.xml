@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <pattern value="com.coelho.noteapp.entities.Note" method="getColor" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="getDateTime" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="getId" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="getImagePath" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="getNoteText" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="getSubtitle" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="getTitle" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="getWebLink" />
+    <pattern value="com.coelho.noteapp.entities.Note" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="setColor" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="setId" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="setImagePath" />
+    <pattern value="com.coelho.noteapp.entities.Note" method="setWebLink" />
+    <pattern value="com.coelho.noteapp.ExampleUnitTest" method="addition_isCorrect" />
+    <pattern value="com.coelho.noteapp.activities.CreateNoteActivity" />
+    <pattern value="com.coelho.noteapp.dao.NoteDao" method="deleteNote" />
+    <pattern value="com.coelho.noteapp.ExampleInstrumentedTest" />
+    <pattern value="com.coelho.noteapp.ExampleUnitTest" />
+    <pattern value="com.coelho.noteapp.dao.NoteDao" method="getAllNotes" />
+    <pattern value="com.coelho.noteapp.activities.MainActivity" />
+    <pattern value="com.coelho.noteapp.dao.NoteDao" method="insertNote" />
+    <pattern value="com.coelho.noteapp.dao.NoteDao" />
+    <pattern value="com.coelho.noteapp.ExampleInstrumentedTest" method="useAppContext" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
