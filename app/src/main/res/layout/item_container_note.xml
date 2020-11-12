@@ -18,7 +18,7 @@
         android:fontFamily="@font/ubuntu_bold"
         android:includeFontPadding="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/_13sdp" />
+        android:textSize="@dimen/_13ssp" />
 
     <TextView
         android:id="@+id/textSubtitle"
@@ -31,7 +31,7 @@
         android:fontFamily="@font/ubuntu_regular"
         android:includeFontPadding="false"
         android:textColor="@color/colorNoteSubtitleText"
-        android:textSize="@dimen/_12sdp" />
+        android:textSize="@dimen/_12ssp" />
 
     <TextView
         android:id="@+id/textDateTime"
@@ -43,6 +43,6 @@
         android:fontFamily="@font/ubuntu_regular"
         android:includeFontPadding="false"
         android:textColor="@color/colorNoteSubtitleText"
-        android:textSize="@dimen/_7sdp" />
+        android:textSize="@dimen/_7ssp" />
 
 </LinearLayout>

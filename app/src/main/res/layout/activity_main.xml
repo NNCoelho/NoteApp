@@ -61,8 +61,7 @@
             android:inputType="text"
             android:textColor="@color/white"
             android:textColorHint="@color/colorTextHint"
-            android:textSize="@dimen/_13sdp" />
-
+            android:textSize="@dimen/_13ssp" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -114,7 +113,6 @@
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_web_link"
             app:tint="@color/colorIcons" />
-
     </LinearLayout>
 
     <ImageView
