@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coelho.noteapp">
 
+    <queries>
+        <package android:name="layout" />
+    </queries>
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
