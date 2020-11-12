@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Notes App</string>
     <string name="perfil">Perfil Geral</string>
     <string name="search_notes">Pesquisa</string>
@@ -8,4 +8,8 @@
     <string name="miscellaneous">Miscellaneous</string>
     <string name="pick_color">Pick Color</string>
     <string name="add_image">Add Image</string>
+    <string name="add_url">Add URL</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="add">ADD</string>
+    <string name="cancel_dialog" tools:ignore="ButtonCase">CANCEL</string>
 </resources>
