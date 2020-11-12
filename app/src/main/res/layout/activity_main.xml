@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:padding="@dimen/_9sdp"
     tools:context=".activities.MainActivity">
 
     <TextView
@@ -17,7 +16,7 @@
         android:layout_marginEnd="@dimen/_12sdp"
         android:fontFamily="@font/ubuntu_bold"
         android:includeFontPadding="false"
-        android:text="@string/my_notes"
+        android:text="@string/perfil"
         android:textColor="@color/white"
         android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toTopOf="@+id/layoutSearch"
