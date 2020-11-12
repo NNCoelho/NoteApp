@@ -4,6 +4,7 @@
     <string name="search_notes">Pesquisa</string>
     <string name="note_title">Titulo</string>
     <string name="note_subtitle">Subtitlo</string>
-    <string name="type_note_here">Escreva nota aqui..</string>
+    <string name="type_note_here">Insira aqui a sua promoção..</string>
     <string name="miscellaneous">Miscellaneous</string>
+    <string name="pick_color">Pick Color</string>
 </resources>
