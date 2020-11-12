@@ -56,7 +56,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
         final TextView textTitle;
         final TextView textSubtitle;
         final TextView textDateTime;
-        LinearLayout layoutNote;
+        final LinearLayout layoutNote;
 
         NoteViewHolder(@NonNull View itemView) {
             super(itemView);
