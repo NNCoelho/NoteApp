@@ -17,7 +17,6 @@ import android.provider.MediaStore;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -345,7 +344,7 @@ public class CreateNoteActivity extends AppCompatActivity {
             AlertDialog.Builder builder = new AlertDialog.Builder(CreateNoteActivity.this);
             View view = LayoutInflater.from(this).inflate(
                     R.layout.layout_delete_note,
-                    (ViewGroup) findViewById(R.id.layoutDeleteNoteContainer)
+                    findViewById(R.id.layoutDeleteNoteContainer)
             );
 
             builder.setView(view);
@@ -461,7 +460,7 @@ public class CreateNoteActivity extends AppCompatActivity {
             AlertDialog.Builder builder = new AlertDialog.Builder(CreateNoteActivity.this);
             View view = LayoutInflater.from(this).inflate(
                     R.layout.layout_add_url,
-                    (ViewGroup) findViewById(R.id.layoutAddUrlContainer)
+                    findViewById(R.id.layoutAddUrlContainer)
             );
             builder.setView(view);
 
