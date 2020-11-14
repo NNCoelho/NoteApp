@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements NotesListener {
                 );
             }
         });
+
+        // NOTES MAIN VIEW
         notesRecyclerView = findViewById(R.id.notesRecyclerView);
         notesRecyclerView.setLayoutManager(
                 new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements NotesListener {
 
         getNotes(REQUEST_CODE_SHOW_NOTES, false);
 
+        // SEARCH BOX
         EditText inputSearch = findViewById(R.id.inputSearch);
         inputSearch.addTextChangedListener(new TextWatcher() {
             @Override

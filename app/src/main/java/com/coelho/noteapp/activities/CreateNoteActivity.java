@@ -106,7 +106,7 @@ public class CreateNoteActivity extends AppCompatActivity {
             setViewOrUpdateNote();
         }
 
-        // DELETES
+        // DELETE WEB AND URL
         findViewById(R.id.imageRemoveWebURL).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -124,7 +124,6 @@ public class CreateNoteActivity extends AppCompatActivity {
                 selectedImagePath = "";
             }
         });
-
         iniMiscellaneous();
         setSubtitleIndicatorColor();
     }
@@ -279,7 +278,7 @@ public class CreateNoteActivity extends AppCompatActivity {
             }
         });
 
-        // COLORS
+        // SET COLORS
         if (alreadyAvailableNote != null && alreadyAvailableNote.getColor() != null && !alreadyAvailableNote.getColor().trim().isEmpty()) {
             switch (alreadyAvailableNote.getColor()) {
                 case "#FDBE3B":
@@ -339,14 +338,12 @@ public class CreateNoteActivity extends AppCompatActivity {
     }
 
     private void showDeleteNoteDialog() {
-
         if (dialogDeleteNote == null) {
             AlertDialog.Builder builder = new AlertDialog.Builder(CreateNoteActivity.this);
             View view = LayoutInflater.from(this).inflate(
                     R.layout.layout_delete_note,
                     findViewById(R.id.layoutDeleteNoteContainer)
             );
-
             builder.setView(view);
             dialogDeleteNote = builder.create();
             if (dialogDeleteNote.getWindow() != null) {
@@ -401,7 +398,7 @@ public class CreateNoteActivity extends AppCompatActivity {
         }
     }
 
-    // HANDLING PERMISSIONS
+    // HANDLING IMAGE PERMISSIONS
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -423,15 +420,12 @@ public class CreateNoteActivity extends AppCompatActivity {
                 Uri selectedImageUri = data.getData();
                 if (selectedImageUri != null) {
                     try {
-
                         InputStream inputStream = getContentResolver().openInputStream(selectedImageUri);
                         Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                         imageNote.setImageBitmap(bitmap);
                         imageNote.setVisibility(View.VISIBLE);
                         findViewById(R.id.imageRemoveImage).setVisibility(View.VISIBLE);
-
                         selectedImagePath = getPathFromUri(selectedImageUri);
-
                     } catch (Exception exception) {
                         Toast.makeText(this, exception.getMessage(), Toast.LENGTH_SHORT).show();
                     }
