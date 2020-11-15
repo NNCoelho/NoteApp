@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements NotesListener {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 selectImage();
             } else {
-                Toast.makeText(this, "Permission Denied!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Permission denied!", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -184,6 +184,7 @@ public class MainActivity extends AppCompatActivity implements NotesListener {
     }
 
     private void getNotes(final int requestCode, final boolean isNoteDeleted) {
+
         @SuppressLint("StaticFieldLeak")
         class GetNotesTask extends AsyncTask<Void, Void, List<Note>> {
             @Override
